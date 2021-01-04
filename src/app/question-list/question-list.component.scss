@@ -1,0 +1,96 @@
+.example-form {
+   padding: 50px;
+  }
+  
+.form-control {
+    width: 90%;
+}
+
+.list{
+    padding: 15px;
+}
+
+
+.question-summary {
+    display: flex;
+    padding: 12px 8px;
+    float: none;
+    width: 100%;
+}
+
+.statscontainer {
+    margin-right: 16px;
+    width: 58px;
+    float: none;
+}
+
+.question-summary .stats, .question-summary .stats+.views {
+    margin-left: 0;
+}
+
+.vote {
+    text-align: center;
+}
+
+.votes {
+    padding: 0;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.vote span {
+    display: block;
+    color: var(--black-500);
+}
+
+.statscontainer .status {
+    padding: 7px 0 5px;
+    border-radius: 3px;
+}
+
+.question-summary .stats, .question-summary .stats+.views {
+    margin-left: 0;
+}
+
+.statscontainer .views {
+    width: 58px;
+}
+
+.summary, .narrow .summary {
+    flex: 1 auto;
+    width: auto;
+    float: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+.excerpt {
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.tags {
+    line-height: 18px;
+    float: left;
+    padding: 2px;
+}
+
+.post-tag{
+    font-size: 12px;
+    padding: 3px;
+    margin: 2px 2px 2px 0;
+    font-size: 11px;
+    line-height: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    background-color: #e1ecf4;;
+}
+
+.my-pagination{
+    text-align: center;
+}

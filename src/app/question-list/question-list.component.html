@@ -1,0 +1,41 @@
+
+<div class="example-form">
+    <input matInput placeholder="Search..." class="form-control"  [(ngModel)]="searchedKeyword" type="text">
+</div>  
+
+  <div class="question-summary"*ngFor="let question of questionList | filter:searchedKeyword | paginate:{itemsPerPage: 10, currentPage:p}">
+    <div class="statscontainer">
+        <div class="stats">
+            <div class="vote">
+                <div class="votes">
+                    <span class="vote-count-post "><strong>{{question.score}}</strong></span>
+                    <div class="viewcount">votes</div>
+                </div>
+            </div>
+            <div class="vote">
+                <div class="votes">
+                    <span class="vote-count-post "><strong>{{question.answer_count}}</strong></span>
+                    <div class="viewcount">Answers</div>
+                </div>
+            </div>
+        </div>
+        <div class="views " title="2 views">
+    {{question.view_count}} views
+</div>
+    </div>
+    <div class="summary">
+        <h3><a routerLink="/question-detail" class="question-hyperlink">{{question.title}}</a></h3>
+        <div class="excerpt">
+            I am trying to create a language similar to c++ for fun which would improve on the features that c++ lacks (in my opinion.)
+            The syntax would be almost exactly the same as c++, except there would be a ...
+        </div>
+        <div class="tags" *ngFor="let tag of question.tags">
+          <a href="" class="post-tag" title="show questions tagged 'compiler-construction'" rel="tag">{{tag}}</a> 
+        </div>
+
+    </div>
+</div>
+<pagination-controls  (pageChange)="p= $event;" class="my-pagination"></pagination-controls>
+
+
+

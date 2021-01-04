@@ -1,0 +1,36 @@
+.count{
+    margin-left: 10px;
+}
+
+#content {
+    float:left;
+    width:80%;
+    word-wrap: break-word;
+    white-space:pre-wrap;
+    padding-left: 10px;
+}
+
+.title{
+    padding: 15px;
+}
+
+.tags {
+    line-height: 18px;
+    float: left;
+    padding: 2px;
+}
+
+.post-tag{
+    font-size: 12px;
+    padding: .4em .5em;
+    margin: 2px 2px 2px 0;
+    font-size: 11px;
+    line-height: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    background-color: #e1ecf4;;
+}
